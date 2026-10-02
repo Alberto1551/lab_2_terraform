@@ -45,3 +45,10 @@ variable "tags" {
     managed_by = "terraform"
   }
 }
+
+variable "subscription_id" {
+  description = "The Azure subscription ID."
+  type        = string
+  default     = "5135d08c-60bd-4185-ac05-14e754047895"
+  sensitive   = true
+}
